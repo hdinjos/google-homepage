@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>google site</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
         .main-container {
             display: flex;
             flex-direction: column;
-            padding-top: 150px;
+            /* height: 400px; */
+            /* height: 100%; */
         }
-        .logo, .search {
+
+        .logo,
+        .search {
             margin: auto;
         }
+
         .logo {
+            margin-top: 170px;
             margin-bottom: 10px;
         }
+
         .search input {
             margin-top: 10px;
             border: 1px solid #eaeaea;
@@ -23,20 +35,140 @@
             border-radius: 50px;
             height: 45px;
             width: 550px;
-            padding-left: 20px;
+            padding: 0 20px;
+            font-size: 15px;
+        }
+
+        .search input:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .wrap-btn {
+            display: flex;
+            margin-top: 30px;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        button {
+            margin: 0 8px;
+            border: 0;
+            outline: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: grey;
+            font-size: 15px;
+        }
+
+        button:hover {
+            border: 1px solid gray;
+            color: #000;
+        }
+
+        ul {
+            padding: 0;
+            /* margin: 10px; */
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 20px;
+            /* margin: 0; */
+            /* padding: 0; */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border: 1px solid blue;
+            /* margin-top: auto; */
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid blue;
+            align-items: flex-end;
+            /* margin-top: auto; */
+            /* position: relative; */
+            /* height: 200px; */
+            /* margin-top: -200px; */
         }
     </style>
 </head>
+
 <body>
     <div class="main-container">
+        <header>
+            <div class="left">
+                <ul>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Store</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="">Gmail</a>
+                    </li>
+                    <li>
+                        <a href="">Images</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <!-- <li>
+                        <button>Login</button>
+                    </li> -->
+                </ul>
+            </div>
+        </header>
         <div class="logo">
-            <img src="logo_google.png"/>
+            <img src="logo_google.png" />
         </div>
         <div class="search">
-            <input type="text" placeholder="Search"/>
+            <input type="text" placeholder="Search" />
         </div>
-            
+        <div class="wrap-btn">
+            <button class="btnA">Google Search</button>
+            <button class="btnB">I'm Feeling Lucky</button>
+        </div>
+        <footer>
+            <div class="left">
+                <ul>
+                    <li>
+                        Advertising
+                    </li>
+                    <li>
+                        Advertising
+                    </li>
+                    <li>
+                        Advertising
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        Advertising
+                    </li>
+                    <li>
+                        Advertising
+                    </li>
+                    <li>
+                        Advertising
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>
